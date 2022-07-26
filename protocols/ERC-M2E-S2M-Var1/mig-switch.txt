@@ -1,0 +1,10 @@
+role_req_equal role_reply c-dst
+role_req_equal controller_status1 c-dst
+role_req_equal controller_status1 c-src
+barrier_req barrier_reply c-src
+role_req_master role_reply c-dst
+role_req_master controller_status2 c-dst
+role_req_master controller_status2 c-src
+role_req_equal2 role_reply c-src
+role_req_equal2 controller_status3 c-src
+role_req_equal2 controller_status3 c-dst

@@ -1,0 +1,14 @@
+1 c-src c-dst - start_signal
+2 c-dst mig-switch - role_request_equal
+3 mig-switch c-dst - role_replay
+3 mig-switch c-dst - controller_status
+3 mig-switch c-src start-buffer controller_status
+4 c-src c-dst - local_state
+5 c-src mig-switch - barrier_request
+6 mig-switch c-src - barrier_reply
+7 c-src c-dst - end_migration
+8 c-dst mig-switch - role_request_master
+9 mig-switch c-src - role_status
+9 mig-switch c-dst - role_replay
+10 mig-switch c-src - controller_status
+10 mig-switch c-dst stop-buffer controller_status

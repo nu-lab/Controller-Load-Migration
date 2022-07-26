@@ -1,0 +1,16 @@
+# this file is out-dated (start-buffer is moved)
+1 c-src c-dst - start_signal
+2 c-dst mig-switch - role_request_equal
+3 mig-switch c-dst - role_reply
+4 c-dst c-src start-buffer ready_for_migration
+5 c-src mig-switch - flow_mod_add
+5 c-src mig-switch - barrier_request
+6 mig-switch c-src - barrier_reply
+7 c-src mig-switch - flow_mod_delete
+8 mig-switch c-src - flow_removed
+8 mig-switch c-dst - flow_removed
+9 c-src mig-switch - barrier_request
+10 mig-switch c-src - barrier_reply
+11 c-src c-dst - end_migration
+12 c-dst mig-switch - role_request_master
+13 mig-switch c-dst stop-buffer rele_reply_master

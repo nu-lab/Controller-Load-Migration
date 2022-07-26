@@ -1,0 +1,6 @@
+barrier_req1 barrier_reply1 c-src
+flow_mod_del flow_removed c-src
+flow_mod_del flow_removed c-dst
+barrier_req2 barrier_reply2 c-src
+role_req_master role_reply_master c-dst
+role_req_master finish c-dst

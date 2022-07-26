@@ -1,0 +1,3 @@
+controller_status1 local_state c-dst
+controller_status1 barrier_req mig-switch
+barrier_reply end_migration c-dst

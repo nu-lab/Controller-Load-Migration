@@ -1,0 +1,7 @@
+role_req_equal role_reply c-dst
+role_req_equal controller_status1 c-src
+role_req_equal controller_status1 c-dst
+barrier_req barrier_reply c-src
+role_req_master role_reply2 c-dst
+role_req_master controller_status2 c-dst
+role_req_master controller_status2 c-src

@@ -1,0 +1,6 @@
+ready phase_finish_1 -
+ready flow_mod_add mig-switch
+ready barrier_req1 mig-switch
+barrier_reply1 flow_mod_del mig-switch
+flow_removed barrier_req2 mig-switch
+barrier_reply2 end_migration c-dst 

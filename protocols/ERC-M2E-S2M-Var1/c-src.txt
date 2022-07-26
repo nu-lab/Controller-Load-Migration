@@ -1,0 +1,4 @@
+controller_status1 local_state c-dst
+controller_status1 barrier_req mig-switch
+barrier_reply end_migration c-dst
+controller_status2 role_req_equal2 mig-switch

@@ -1,0 +1,2 @@
+controller_status1 barrier_req mig-switch
+barrier_reply end_migration c-dst

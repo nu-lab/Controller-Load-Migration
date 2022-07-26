@@ -1,0 +1,10 @@
+1 c-dst mig-switch - role_request_equal
+2 mig-switch c-dst - role_reply
+2 mig-switch c-dst - controller_status
+2 mig-switch c-src start-buffer controller_status
+3 c-src c-dst - local_state
+4 c-dst c-src - end_migration
+5 c-src mig-switch - role_request_slave
+6 mig-switch c-src - role_reply
+7 mig-switch c-src - controller_status
+7 mig-switch c-dst stop-buffer controller_status

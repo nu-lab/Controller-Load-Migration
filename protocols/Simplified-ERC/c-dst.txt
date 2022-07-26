@@ -1,0 +1,8 @@
+start_signal role_req_equal mig-switch
+controller_status1 phase_finish_1 -
+controller_status1 start_buffer -
+end_migration phase_finish_2 - 
+end_migration stop_buffer -
+end_migration role_req_master mig-switch
+controller_status2 phase_finish_3 -
+controller_status2 finish_protocol -

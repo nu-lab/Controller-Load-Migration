@@ -1,0 +1,9 @@
+start_signal role_req_equal mig-switch
+role_reply_equal ready c-src
+flow_removed phase_finish_2 -
+flow_removed start_buffer -
+end_migration phase_finish_3 -
+end_migration stop_buffer -
+end_migration role_req_master mig-switch 
+role_reply_master phase_finish_4 -
+role_reply_master finish_protocol - 

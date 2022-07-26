@@ -1,0 +1,5 @@
+barrier_reply remove_dummy_flow mig-switch
+flow_removed start_buffer -
+end_migration role_req_master mig-switch
+controller_status stop_buffer -
+controller_status finish_protocol -

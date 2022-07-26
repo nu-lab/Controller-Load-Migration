@@ -1,0 +1,2 @@
+controller_status1 local_state c-dst
+end_migration role_req_slave mig-switch

@@ -1,0 +1,3 @@
+flow_removed barrier_req2 mig-switch
+barrier_reply end_migration c-dst
+controller_status role_req_equal mig-switch

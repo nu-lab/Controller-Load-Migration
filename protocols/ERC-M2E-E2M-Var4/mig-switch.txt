@@ -1,0 +1,10 @@
+add_dummy_flow_barrier barrier_reply c-dst
+remove_dummy_flow flow_removed c-src
+remove_dummy_flow flow_removed c-dst
+barrier_req2 barrier_reply c-src
+role_req_master role_reply c-dst
+role_req_master controller_status c-dst
+role_req_master controller_status c-src
+role_req_equal role_reply c-src
+role_req_equal controller_status2 c-src
+role_req_equal controller_status2 c-dst

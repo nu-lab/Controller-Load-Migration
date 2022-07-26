@@ -1,0 +1,4 @@
+controller_status1 start_buffer -
+local_state end_migration c-src
+controller_status2 stop_buffer -
+controller_status2 finish_protocol -
